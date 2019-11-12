@@ -1,0 +1,15 @@
+Sub CopyMultipleTabs()
+
+Dim NewSheet As Worksheet
+Dim X As Integer
+Set NewSheet = ActiveSheet
+
+X = Application.InputBox("Enter Number of Copies of Sheet")
+
+For numcopies = 1 To X
+
+Campaign.Copy After:=NewSheet
+
+Next
+
+End Sub
